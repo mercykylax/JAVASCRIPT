@@ -1,0 +1,25 @@
+Definition-assingning to an undeclared indentifier in loose mode which creates a global variable without any declaration.
+Functions are defined with the function keyword.
+     function name of function (){
+     
+    // code to be executed
+}
+        
+
+  Declaration in a function-declares the name in a function and the return type.You must declare an indentifier before you can use it.
+Example;
+    Let a;// if this is a declaration.
+    function declaration example: function foo( ){
+                                                }
+
+Initilization-deals with the task of intilialising the contents of your data structure.Its a common practice in statically typed languages.
+You can intilize a variable or property with a reference to a function.
+     Let a =function () {} :       //variable
+     {some object.b = function() {} ;        //object property
+
+
+    Declaration in object intiliazer.
+        example   obj={
+                      foo() { // << This is the method declaration 
+                      }       // >>
+                      };     
