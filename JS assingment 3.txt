@@ -1,0 +1,16 @@
+fruits_list=["kiwi","bananas","pineapples","lemons","mangoes","grapes","apple"]
+
+function printfruits(fruits_list){console.log(fruit_list);}
+
+(7) ["kiwi", "bananas", "pineapples", "lemons", "mangoes", "grapes", "apple"]
+
+var fruit_index=prompt("from fruits_list pick 3");
+
+console.log(fruits_list[fruit_index]);
+function pickfruit(fruit_list,fruit_index)
+
+{alert(fruit_list[fruit_index]);}
+
+VM1114:2 lemons
+
+undefined
