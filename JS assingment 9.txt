@@ -1,0 +1,84 @@
+
+class MumMboga {
+  
+  constructor() {
+    this.products = [];
+    this.carts = [];
+    this.orders = [];
+    this.customers  = [];
+  }
+addProduct(productId, name, price, quantity){
+  let product = {
+    id:productId,
+    name:name,
+    price:price,
+    quantity:quantity,
+  }
+  this.products.push(product)
+}
+  getProduct(productId){
+    for (var i = 0; i < this.products.length; i++){
+       let product = this.products[1]
+       if(product.id === productId){
+         return product
+      
+//       console.log(this.products[i])
+     }
+    }   
+  }
+  removeProduct(productId){
+    let product = this.getProduct(productId)
+    let index = this.products.indexOf(product)
+    this.products.splice(index,1)
+ 
+  
+  }
+  
+  updateProduct(productId){
+    var index = array.indexOf(productId);
+    array[index].product = newproduct;
+    array[index].Id = newId;
+   
+  }
+  
+   getProduct(productId){
+    for (var i = 0; i < this.products.length; i++){
+       let product = this.products[1]
+       if(product.id === productId){
+         return product
+         console.log(this.products[i])
+       }
+    }
+   }
+  addToCart( cartId, product, orderQuantity, customerId)
+ {
+  let products = {
+    id:cartId,
+    product:product,
+    orderQuantity:orderQuantity,
+    customerId:customerId,
+  }
+  this.products.push(products)
+}   
+ removeProduct(productId){
+    let cart = this.getProduct(productId)
+    let index = this.products.indexOf(cart)
+    this.products.splice(index,1)
+ 
+  
+  }
+}
+var mumMboga = new MumMboga()
+mumMboga.addProduct(1,"Tomatoes",20,5)
+mumMboga.addProduct(2,"Apples",40,8)
+mumMboga.addToCart(1,"Kiwi",2,124567)
+mumMboga.addToCart(2,"Oranges",3,127897)
+mumMboga.removeProduct(1);
+console.log(mumMboga.products)
+
+mumMboga.getProduct(1);
+mumMboga.removeProduct(1);
+// mumMboga.updateProduct(1);
+console.log(mumMboga.products)
+
+ 
