@@ -1,0 +1,21 @@
+var body = document.body
+body.style.backgroundColor = "silver"
+
+var tag=document.getElementById("title");
+title.style.color="green"
+
+
+var h3= document.getElementsByTagName("h3");
+for(var j=0;j<=h3.length;j++){
+  h3[j].style.textTransform ="upperCase" ;
+}
+
+var li=document.createElement("li")
+li.innerHTML=("Kiwi")
+var fruit=document.createElement("fruList")
+fruList.appendChild(li)
+
+var li=document.createElement("li")
+li.innerHTML=("Spinach")
+var veg=document.createElement("vegList")
+vegList.appendChild(li)
