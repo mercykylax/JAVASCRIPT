@@ -1,0 +1,103 @@
+HTML.
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Greens Kiosk</title>
+</head>
+<body>
+  <h1 id="title">Welcome to Greens Kiosk</h1>
+  <p>We sell fruits and vegetables</p>
+  <h3>Fruits</h3>
+  <ul id="fruList">
+    <li>Mangoes</li>
+    <li>Bananas</li>
+    <li>Water Melons</li>
+    <input id="fruitName" type="text" >
+    <button id="btn" onClick=fruList.append(addFruit())>FRUITS</button>
+  </ul>
+  <h3>Vegetables</h3>
+  <ul id="vegList">
+    <li>Onions</li>
+    <li>Tomatoes</li>
+    <li>Kales</li>
+    <input id="vegName" type="text" >
+    <button id="btn" onClick=vegList.append(addVegetable())>VEGETABLES</button>
+  </ul>
+</body>
+</html>
+
+
+JAVASCRIPT
+
+
+
+var colorChange =()=>{
+  var title = document.getElementById("title");
+  title.style.color= title.style.color=="green"? "silver":"green"
+
+  };
+  setInterval(colorChange,1000);
+
+
+
+
+
+
+
+var fruits = document.getElementsByClassName("FRUITS");
+  var i;
+
+  for (i = 0; i < fru.length; i++) {
+  fruits[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var frulist = this.nextElementSibling;
+    if (frulist.style.display === "block") {
+      frulist.style.display = "none";
+    } else {
+      frulist.style.display = "block";
+    }
+  });
+  }
+
+
+
+
+  var vegetables = document.getElementsByClassName("VEGETABLES");
+    var i;
+
+  for (i = 0; i < veg.length; i++) {
+  vegetables[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var greens = this.nextElementSibling;
+    if (greens.style.display === "block") {
+      greens.style.display = "none";
+    } else {
+      greens.style.display = "block";
+    }
+  });
+}
+
+
+
+
+var input = document.getElementById("fruitName");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("btn").click();
+  }
+});
+
+
+
+
+var input = document.getElementById("vegName");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("btn").click();
+  }
+});
+
+
